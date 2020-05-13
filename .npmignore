@@ -1,0 +1,10 @@
+.git/
+node_modules/
+test/
+.gitignore
+.npmignore
+json/
+lib/read
+obj/
+yarn.lock
+coverage/

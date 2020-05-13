@@ -1,0 +1,60 @@
+{
+  "name": "steplix-emvqr",
+  "version": "0.2.0",
+  "description": "Decode emv qr code specification for payments",
+  "author": "Slain",
+  "license": "MIT",
+  "preferGlobal": true,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steplix/emvqr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/steplix/emvqr/issues"
+  },
+  "keywords": [
+    "emv",
+    "qr",
+    "payment"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.2",
+    "jest": "^23.5.0"
+  },
+  "scripts": {
+    "lint": "node_modules/.bin/eslint emvqr test",
+    "lint-fix": "node_modules/.bin/eslint --fix emvqr test",
+    "test": "jest test/ --coverage"
+  },
+  "jshintConfig": {
+    "camelcase": true,
+    "curly": false,
+    "eqeqeq": true,
+    "forin": true,
+    "latedef": false,
+    "newcap": true,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "node": true,
+    "browser": true,
+    "predef": [
+      "it",
+      "describe",
+      "before",
+      "after"
+    ]
+  }
+}

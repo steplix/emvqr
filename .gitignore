@@ -1,0 +1,5 @@
+node_modules/
+.idea/
+json/
+obj/
+coverage/
