@@ -1,8 +1,7 @@
-
 const crc = require('./crc');
 const { getTag, getSubTag } = require('./scheme');
 
-const validate = (text) => {
+const validate = text => {
     const data = text.substring(0, text.length - 4);
     const checksum = text.substring(text.length - 4);
 
@@ -42,7 +41,7 @@ const read = (text, describe, tagId) => {
             id,
             name: subtag ? subtag.name : tag.name,
             len,
-            data
+            data,
         };
     }
     else {
@@ -52,12 +51,12 @@ const read = (text, describe, tagId) => {
     if (next.length) {
         return {
             [id]: value,
-            ...read(next, describe, tagId)
+            ...read(next, describe, tagId),
         };
     }
     else {
         return {
-            [id]: value
+            [id]: value,
         };
     }
 };
@@ -71,5 +70,6 @@ const decode = (text, tiny = false) => {
 };
 
 module.exports = {
-    decode
+    decode,
+    validate,
 };
