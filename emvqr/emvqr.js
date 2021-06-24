@@ -4,7 +4,7 @@ const { getTag, getSubTag } = require('./scheme');
 
 const validate = (text) => {
     const data = text.substring(0, text.length - 4);
-    const checksum = text.substring(text.length - 4);
+    const checksum = text.substring(text.length - 4).toUpperCase();
 
     const hash = crc.computeCRC(data);
     return hash === checksum;
