@@ -14,6 +14,12 @@ const scheme = {
             '01-63': {
                 name: 'Context Specific Data',
             },
+            '98': {
+                name: 'Globally Unique Identifier',
+            },
+            '99': {
+                name: 'Globally Unique Identifier',
+            },
         }
     },
     52: {

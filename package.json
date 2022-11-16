@@ -1,6 +1,6 @@
 {
   "name": "steplix-emvqr",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Decode emv qr code specification for payments",
   "author": "Slain",
   "license": "MIT",
