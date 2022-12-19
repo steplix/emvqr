@@ -55,7 +55,19 @@ const scheme = {
     62: {
         name: 'Additional Data Field Template',
         scheme: {
+            '01': {
+                name: 'Additional Data Field',
+            },
+            '03': {
+                name: 'Additional Data Field',
+            },
+            '05': {
+                name: 'Additional Data Field',
+            },
             '07': {
+                name: 'Additional Data Field',
+            },
+            '08': {
                 name: 'Additional Data Field',
             },
         }
